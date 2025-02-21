@@ -22,7 +22,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(jsonInput);
       setError(null);
-      const res = await axios.post("https://bajaj-backend-seven-pi.vercel.app/bfhl", parsedInput);
+      const res = await axios.post("https://bajajbackend-hvkf.onrender.com/bfhl", parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError("Invalid JSON input");
